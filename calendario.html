@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Académico 2024 - Universidad Nacional de San Isidro</title>
+    <link rel="stylesheet" href="css/calendario.css">
+</head>
+<body>
+
+<header>
+    <h1>Universidad Nacional de San Isidro</h1>
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="#calendario-academico" class="active">Calendario Académico</a>
+        <a href="#carreras">Carreras</a>
+        <a href="#como-llegar">Cómo Llegar</a>
+    </div>
+    <div class="user-login">
+        <img src="imagenes/INICIOSESION.jpg" alt="User Icon" class="user-icon">
+        <a href="#login" class="login-link">Iniciar Sesión</a>
+    </div>
+    </nav>
+</header>
+
+<section class="calendario-academico" id="calendario-academico">
+    <h2>CALENDARIO ACADÉMICO 2024</h2>
+    <div class="select-periodo">
+        <label for="periodo-select">Selecciona el período: </label>
+        <select id="periodo-select" onchange="cambiarPeriodo()">
+            <option value="primer-cuatrimestre">Primer Cuatrimestre</option>
+            <option value="segundo-cuatrimestre">Segundo Cuatrimestre</option>
+            <option value="receso-invierno">Receso de Invierno</option>
+            <option value="examenes-finales">Exámenes Finales</option>
+        </select>
+    </div>
+    <div id="calendario">
+        <!-- El contenido del calendario se genera acá -->
+    </div>
+</section>
+
+<footer>
+    <p>Derechos Reservados &copy; Universidad Nacional de San Isidro 2024</p>
+</footer>
+
+<script src="js/calendario.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>
