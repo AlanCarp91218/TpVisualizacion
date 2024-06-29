@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0px 0px;
-    background-color: #f5f5f5;
+    padding: 0;
+    background-color: #e0e0e0;
     color: #333;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -12,23 +12,22 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 0.1px 0;
+    padding: 10px 0;
+    padding-bottom: 0;
 }
 
 .nav {
     background-color: #444;
     overflow: hidden;
     text-align: center;
-    margin-top: 0px;
 }
 
 .nav a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 13px 20px;
+    padding: 14px 20px;
     text-decoration: none;
-    margin: 0 -2px;
 }
 
 .nav a:hover {
@@ -41,12 +40,11 @@ header {
     color: #fff;
 }
 
+
 .user-login {
-    position:fixed;
+    top: 10%;
+    position: absolute;
     right: 0;
-    top: 0;
-    padding-top: 0px;
-    bottom: 725px;
     display: flex;
     align-items: center;
 }
@@ -61,7 +59,6 @@ header {
     color: #f2f2f2;
     text-decoration: none;
     padding: 13px 20px;
-    display: block; 
 }
 
 .login-link:hover {
@@ -69,12 +66,14 @@ header {
     color: black;
 }
 
+
+
 .calendario-academico {
-    height: 410px; 
     text-align: center;
     padding: 50px 20px;
-    margin-top: 110px;
+    margin-top: 30px;
     background-color: #e0e0e0;
+    min-height: 500px; /* Establecer una altura mínima */
 }
 
 .select-periodo {
@@ -90,7 +89,7 @@ header {
 }
 
 .periodo {
-    width: 45%;
+    width: 70%;
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
@@ -106,20 +105,24 @@ header {
     margin-bottom: 10px; 
 }
 
-.periodo p {
-    margin: 8px 0; 
-    line-height: 1.4; 
-    color: #666; 
+.evento-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
 }
 
-.periodo p span.destacado {
-    font-weight: bold; 
-    color: #363434; 
+.evento-titulo, .evento-fecha {
+    width: 45%;
+    text-align: left;
 }
 
-.evento {
-    color: #333;
+.evento-titulo {
     font-weight: bold;
+    color: #333;
+}
+
+.evento-fecha {
+    color: #666;
 }
 
 footer {

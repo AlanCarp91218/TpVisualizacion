@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario Académico 2024 - Universidad Nacional de San Isidro</title>
+
     <link rel="stylesheet" href="css/calendario.css">
 </head>
 <body>
@@ -15,12 +16,11 @@
         <a href="#calendario-academico" class="active">Calendario Académico</a>
         <a href="#carreras">Carreras</a>
         <a href="#como-llegar">Cómo Llegar</a>
-    </div>
+    </nav>
     <div class="user-login">
         <img src="imagenes/INICIOSESION.jpg" alt="User Icon" class="user-icon">
         <a href="#login" class="login-link">Iniciar Sesión</a>
     </div>
-    </nav>
 </header>
 
 <section class="calendario-academico" id="calendario-academico">
@@ -34,7 +34,7 @@
             <option value="examenes-finales">Exámenes Finales</option>
         </select>
     </div>
-    <div id="calendario">
+    <div id="calendario" class="calendario">
         <!-- El contenido del calendario se genera acá -->
     </div>
 </section>
@@ -45,6 +45,5 @@
 
 <script src="js/calendario.js"></script>
 <script src="js/nav.js"></script>
-
 </body>
 </html>
