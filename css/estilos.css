@@ -4,10 +4,7 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-<<<<<<< HEAD
     overflow-x: hidden;
-=======
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
 }
 
 header {
@@ -15,15 +12,11 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-<<<<<<< HEAD
     margin-bottom: 0;
-=======
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
 }
 
 .nav {
     background-color: #444;
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,11 +37,6 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-=======
-    overflow: hidden;
-    text-align: center;
-    margin-top: 0px;
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
 }
 
 .nav a {
@@ -70,7 +58,6 @@ header {
     color: #fff;
 }
 
-<<<<<<< HEAD
 .user-login {
     position: absolute;
     right: 0;
@@ -96,8 +83,6 @@ header {
 }
 
 
-=======
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
 .presentacion-universidad {
     background-image: url('../imagenes/Universidad.jpg'); 
     background-size: cover;
@@ -118,10 +103,6 @@ header {
     color: #000;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
 .departments {
     display: flex;
     justify-content: space-around;
@@ -135,7 +116,6 @@ header {
     text-align: center;
     width: 200px;
     margin: 20px;
-<<<<<<< HEAD
     flex-direction: column;
     margin-top: -10px;
 }
@@ -151,10 +131,6 @@ header {
 }
 
 
-=======
-}
-
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
 .department img {
     max-width: 100%;
     width: 150px; 
@@ -214,13 +190,8 @@ header {
 
 .slide-text {
     position: absolute;
-<<<<<<< HEAD
     bottom: 195px; 
     left: 50%;
-=======
-    bottom: 195px; /* Ajusta la posición vertical del texto */
-    left: 50%; /* Centra horizontalmente */
->>>>>>> eccdd5a309d131c60b1d7d97ac445c5edde12592
     transform: translateX(-50%);
     width: 190px;
     height: 40px;
