@@ -122,7 +122,7 @@ header {
 
 .title-centered {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
     width: 100%;
     text-decoration: underline;
@@ -157,6 +157,7 @@ header {
 }
 
 .slider-section {
+    font-size: 21px;
     text-align: center;
     padding: 50px 0;
     background-color: #f0f0f0;
@@ -190,19 +191,17 @@ header {
 
 .slide-text {
     position: absolute;
-    bottom: 195px; 
+    bottom: 3%; 
     left: 50%;
     transform: translateX(-50%);
-    width: 190px;
-    height: 40px;
+    width: 44%;
+    height: 22%;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 7px;
     border-radius: 10px;
     color: #000;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    line-height: 5px;
 }
 
 .prev, .next {
@@ -224,11 +223,11 @@ header {
 }
 
 .next {
-    right: 10px; 
+    right: 10%; 
 }
 
 .prev {
-    left: 10px; 
+    left: 10%; 
 }
 
 .prev:hover, .next:hover {
