@@ -13,13 +13,15 @@
     <header>
         <h1>Universidad Nacional de San Isidro</h1>
         <nav class="nav">
-            <a href="#inicio" class="active" >Inicio</a>
+            <a href="index.html" class="active" >Inicio</a>
             <a href="calendario.html">Calendario Académico</a>
-            <a href="#carreras">Carreras</a>
+            <a href="planesDeEstudio.html">Carreras</a>
             <a href="#como-llegar">Cómo Llegar</a>
             <div class="user-login">
-                <img src="imagenes/INICIOSESION.jpg" alt="Usuario" class="user-icon">
-                <a href="#iniciar-sesion" class="login-link">Iniciar Sesión</a>
+                <a href="ingresoUsuario.html" class="login-link">
+                    <img src="imagenes/INICIOSESION.jpg" alt="Usuario" class="user-icon">
+                    <span>Iniciar Sesión</span>
+                </a>
             </div>
         </nav>
     </header>
@@ -36,28 +38,29 @@
         <div class="department">
             <img src="imagenes/DPTO_ING.jpg" alt="Departamento 1">
             <div class="department-title">DEPARTAMENTO DE INGENIERÍA</div>
-            <p>Tec. en Desarrollo Web</p>
-            <p>Ingeniería en Informática</p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilDesarrolloWeb">Tec. en Desarrollo Web</a></p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilIngenieriaInformatica">Ingeniería en Informática</a></p>
         </div>
         <div class="department">
             <img src="imagenes/DPTO_SALUD.jpg" alt="Departamento 2">
             <div class="department-title">DEPARTAMENTO DE SALUD</div>
-            <p>Lic. en Enfermería</p>
-            <p>Tecnicatura en Anatomía</p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilEnfermeria">Lic. en Enfermería</a></p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilAnatomia">Tecnicatura en Anatomía</a></p>
         </div>
         <div class="department">
             <img src="imagenes/DPTO_ECO.jpg" alt="Departamento 3">
             <div class="department-title">DEPARTAMENTO DE ECONÓMICAS</div>
-            <p>Comercio Internacional</p>
-            <p>Contador Público</p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilComercioInternacional">Comercio Internacional</a></p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilContadorPublico">Contador Público</a></p>
         </div>
         <div class="department">
             <img src="imagenes/DPTO_DER.jpg" alt="Departamento 4">
             <div class="department-title">DEPARTAMENTO DE DERECHO</div>
-            <p>Abogacía</p>
-            <p>Ciencia Política</p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilAbogacia">Abogacía</a></p>
+            <p class="pde"><a href="planesDeEstudio.html?carrera=perfilCienciaPolitica">Ciencia Política</a></p>
         </div>
     </section>
+    
 
     <section class="slider-section">
         <h2>Descubre más sobre nuestra institución</h2>
@@ -88,10 +91,14 @@
     <section class="map-section" id="como-llegar">
         <div class="map-info">
             <i class="bi bi-geo-alt-fill"></i>
-            <h1>Cómo Llegar</h1>
-            <p>Dirección: Alsina 935</p>
+            <h1 style="font-weight: bold; ">Cómo Llegar</h1>
+            <p>Dirección: Av. del Libertador 17175</p>
             <p>San Isidro, Provincia de Buenos Aires</p>
-            <p>Teléfono: +11 3215-7820</p>
+            <p>Teléfono: 4489-6920</p>
+           
+            <p style="font-weight: bold; margin-top: 30px;">Horarios de Atencion:</p>
+            <p>Lunes a Viernes de 08hs a 18hs</p>
+
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.6402449085745!2d-58.52079702350917!3d-34.46127904999094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb028cdb529cd%3A0x676f14abeedb486f!2sUniversidad%20de%20San%20Isidro%20Dr.%20Pl%C3%A1cido%20Mar%C3%ADn%20(USI)!5e0!3m2!1ses-419!2sar!4v1719685351015!5m2!1ses-419!2sar" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
     </section>

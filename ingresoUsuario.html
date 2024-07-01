@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Usuario - USI </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagenes/logo.png">
+    <script>
+        function validarFormulario() {
+            // Aquí puedes agregar tu lógica de validación adicional si es necesario
+            // Por ejemplo, validar que la contraseña cumpla ciertos criterios, etc.
+
+            // Redirigir a otra página si el formulario es válido
+            location.href = "vistaAlumno.html";
+            return false; // Devolver false para evitar que el formulario se envíe
+        }
+    </script>
+</head>
+<body class="img">
+    <header>
+        <h1 style="margin-top: 21px;">Universidad Nacional de San Isidro</h1>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="calendario.html">Calendario Académico</a>
+            <a href="planesDeEstudio.html">Carreras</a>
+            <a href="index.html#como-llegar">Cómo Llegar</a>
+            <div class="user-login">
+                <a href="ingresoUsuario.html" class="login-link">
+                    <img src="imagenes/INICIOSESION.jpg" alt="Usuario" class="user-icon">
+                    <span>Iniciar Sesión</span>
+                </a>
+            </div>
+    </nav>
+    </header>
+
+    <div class="formulario">
+        <h2>Ingreso de Alumno</h2>
+        <form action="index.html" onsubmit="return validarFormulario()">
+            <div class="campo">
+                <label for="usuario" id="labelUsuario">Email:</label>
+                <input type="text" id="usuario" name="usuario" pattern=".*@.*" title="El usuario debe contener al menos un @" required>
+            </div>
+            <div class="campo">
+                <label for="contrasena" id="labelContraseña">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit" id="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Derechos Reservados &copy; Universidad Nacional de San Isidro 2024</p>
+    </footer>
+</body>
+</html>
