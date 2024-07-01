@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elija su carrera para ver el plan de estudio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilosf.css">
+    <link rel="Icon" href="imagenes/logo.png">
+    <title>Planes de Estudio - USI</title>
     <style>
-        .perfil { display: none; }
+         .perfil, .plan-estudio { display: none; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        th, td { width: 20%;     border: 1px solid black; } 
+
+
+        
     </style>
 </head>
 <body>
+    <header style="padding-bottom: 0;">
+        <h1>Universidad Nacional de San Isidro</h1>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="calendario.html">Calendario Académico</a>
+            <a href="planesDeEstudio.html" class="active">Carreras</a>
+            <a href="index.html#como-llegar">Cómo Llegar</a>
+            <div class="user-login">
+                <a href="ingresoUsuario.html" class="login-link">
+                    <img src="imagenes/INICIOSESION.jpg" alt="Usuario" class="user-icon">
+                    <span>Iniciar Sesión</span>
+                </a>
+            </div>
+        </nav>
+    </header>
 
-<h1>Elija su carrera para ver el plan de estudio</h1>
-
+<div class="contenedor-central">
+    <h1 style="text-align: center;">Elija su carrera para ver el plan de estudio</h1>
 <select id="carreraSelect"> 
     <option value="" disabled selected>Seleccione una carrera...</option>
     <option value="perfilDesarrolloWeb">Tecnicatura en Desarrollo Web</option>
@@ -24,7 +49,8 @@
     <option value="perfilCienciaPolitica">Licenciatura en Ciencias Politicas</option>
 </select>
 
-<h1>Perfil Profesional</h1>
+</div>
+<h1 style="text-align: center;" id="tituloPerfil">Perfil Profesional</h1>
 
 <h3 class="perfil" id="perfilDesarrolloWeb">Durante la Tecnicatura en Desarrollo Web, los estudiantes aprenderán a diseñar y desarrollar aplicaciones web modernas y dinámicas. Adquirirán conocimientos en HTML, CSS y JavaScript, así como en frameworks y librerías como Angular, React y Vue.js. También se formarán en el manejo de bases de datos relacionales y no relacionales, y en el desarrollo de backends utilizando tecnologías como Node.js y PHP. Además, aprenderán sobre el diseño de interfaces de usuario (UI) y experiencia de usuario (UX), asegurando la creación de sitios web accesibles y responsivos.</h3>
 <h3 class="perfil" id="perfilIngenieriaInformatica">En la carrera de Ingeniería en Informática, los estudiantes recibirán una sólida formación en fundamentos de programación y algoritmos, estructuras de datos, y sistemas operativos. Estudiarán bases de datos, redes de computadoras y seguridad informática, así como también arquitectura de computadoras y sistemas embebidos. La formación incluye el desarrollo de software a gran escala, ingeniería de software y gestión de proyectos, permitiendo a los futuros ingenieros diseñar, implementar y mantener sistemas informáticos robustos y eficientes.</h3>
@@ -35,7 +61,13 @@
 <h3 class="perfil" id="perfilAbogacia">La carrera de Abogacía ofrece a los estudiantes una formación completa en derecho, abarcando áreas como derecho civil, penal, comercial, laboral y constitucional. Aprenderán sobre técnicas de litigación, redacción de documentos legales y procedimientos judiciales. La formación también incluye el estudio de la teoría del derecho y la ética profesional, preparando a los futuros abogados para asesorar y representar a sus clientes con integridad y competencia en diversos ámbitos legales.</h3>
 <h3 class="perfil" id="perfilCienciaPolitica">En la carrera de Ciencia Política, los estudiantes se formarán en teoría política, sistemas de gobierno y análisis de políticas públicas. Aprenderán sobre relaciones internacionales, sociología política y economía política, así como técnicas de investigación social y análisis cuantitativo. La carrera prepara a los estudiantes para comprender y evaluar procesos políticos y de gobernanza, desempeñándose en roles de asesoría, análisis y gestión en organizaciones gubernamentales, no gubernamentales y del sector privado.</h3>
 
-<script src="planesDeEstudio.js"></script>
+<div id="planEstudio" class="plan-estudio"></div>
+
+<footer>
+    <p>Derechos Reservados &copy; Universidad Nacional de San Isidro 2024</p>
+</footer>
+
+<script src="js/planesDeEstudio.js"></script>
 
 </body>
 </html>

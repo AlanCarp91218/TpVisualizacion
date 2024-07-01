@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styleAlumno.css">
+    <link rel="icon" href="imagenes/logo.png">
+
+    <script>
+        function cerrarSesion() {
+            // Aquí podrías agregar código para cerrar la sesión del usuario
+
+            // Volver a la página anterior
+            location.href = "ingresoUsuario.html";
+        }
+    </script>
+
+    <title>Vista Usuario - USI</title>
+</head>
+<header>
+        <h1 style="margin-top: 0px;">Universidad Nacional de San Isidro</h1>
+    <div class="nav">
+        <a href="#misMaterias">Mis materias</a>
+        <a href="#tramites">Tramites</a>
+        <a href="#fecExamen">Fechas de examenes</a>
+        <div class="cerrar">
+            <a href="#" onclick="cerrarSesion()" style="text-decoration: none;">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Cerrar sesión</span>
+            </a>
+        </div>
+    </div>
+</header>
+<main>
+
+    <body>
+        <article>
+            <div id="misMaterias">
+                <h1>MIS MATERIAS</h1>
+    
+                <h3>MATERIAS APROBADAS:</h3>
+                <table class="aprobadas">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2619</td>
+                            <td>Programación Básica 1</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>2620</td>
+                            <td>Informática General</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>2622</td>
+                            <td>Inglés Técnico 1</td>
+                            <td>8</td>
+                        </tr>
+                                 
+                    </tbody>
+                </table>
+    
+                <h3>MATERIAS DISPONIBLES A CURSAR</h3>
+                <table class="correlativas">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Correlativa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>2623</td>
+                        <td>Programación Básica 2</td>
+                        <td>2619</td>
+
+                    </tr>
+                    <tr>
+                        <td>2627</td>
+                        <td>Inglés Técnico 2</td>
+                        <td>2622</td>
+
+                    </tr>
+                </tbody>
+                </table>
+    
+                <h3>MATERIAS DESAPROBADAS:</h3>
+                <table class="faltantes">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>2621</td>
+                        <td>Matematica General</td>
+                        <td>2</td>
+
+                  
+                </tbody>
+                </table>
+
+                <h1>Mi plan de estudio</h1>
+                <div class="pdf-container">
+                    <i class="fas fa-file-pdf"></i> 
+                    <a href="https://ingenieria.unlam.edu.ar/descargas/36_PlanTecnicaturaWeb.pdf" class="pdf-link" target="_blank">Ver Plan de Estudio</a>
+                </div>
+
+            </div>
+        </article>
+
+        <article>
+            <div id="tramites">
+                <h1>TRAMITES</h1>
+                <div>
+                    <h3>Boleto estudiantil</h3>
+                    <p>Nombre y Apellido:</p><input type="text" id="nombre" name="nombre">
+                    <p>DNI:</p><input type="text" id="dni" name="dni">
+                    <h6 style="font-size: 12px;">Para iniciar el trámite de este beneficio, se verificará tu actividad académica en el ciclo lectivo anterior y actual. Tené en cuenta los siguientes puntos:</h6>
+                    <p>- Poseer una tarjeta SUBE registrada a tu DNI. En el portal <a href="https://www.argentina.gob.ar/sube">SUBE</a> podés hacer este trámite.</p>
+                    <h6><input type="checkbox" id="acceptCheckbox" name="aceptar" value="aceptar">Acepto que mi nombre y apellido, tipo y número de documento, Facultad y correo electrónico se envíe a la Subsecretaria de Transporte de la Provincia de Buenos Aires donde se continuará el trámite.</h6>
+                    <button id="btnBoletoEstudiantil">Iniciar Trámite de Boleto Estudiantil</button>
+                </div>
+        
+                <div>
+                    <h3>Constancia de alumno regular</h3>
+                    <h5 style="font-size: 17px;"><a href=""> Descargar</a></h5>
+                </div>
+            </div>
+        
+            <div class="popup-overlay" id="popupOverlay"></div>
+            <div class="popup" id="popup">
+                <h2>Trámite iniciado</h2>
+                <p>Tu trámite de boleto estudiantil ha sido iniciado correctamente.</p>
+                <button id="closePopup">Cerrar</button>
+            </div>
+        </article>
+
+        <article>
+            <div id="fecExamen">
+                <h1>Fechas de Exámenes</h1>
+                <p>Programación Básica 2 -- 30/06 </p>
+                <p>Inglés 2 -- 01/07 </p>
+                <p>Base de Datos -- 02/07 </p>
+                <p>Introducción al diseño en la web -- 10/07 </p>
+            </div>
+        </article>
+    </body>
+</main>
+
+<footer>
+    <p>Derechos Reservados &copy; Universidad Nacional de San Isidro 2024</p>
+</footer>
+<script>
+    document.getElementById('btnBoletoEstudiantil').addEventListener('click', function() {
+        const nombre = document.getElementById('nombre').value.trim();
+        const dni = document.getElementById('dni').value.trim();
+        const checkbox = document.getElementById('acceptCheckbox');
+
+        if (nombre === "" || dni === "") {
+            alert('Por favor, complete todos los campos.');
+            return;
+        }
+
+        if (!/^\d+$/.test(dni)) {
+            alert('El DNI debe contener solo números.');
+            return;
+        }
+
+        if (!checkbox.checked) {
+            alert('Debes aceptar los términos para iniciar el trámite.');
+            return;
+        }
+
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popupOverlay').style.display = 'block';
+    });
+
+    document.getElementById('closePopup').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('popupOverlay').style.display = 'none';
+    });
+
+    document.getElementById('popupOverlay').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('popupOverlay').style.display = 'none';
+    });
+</script>
+</html>
